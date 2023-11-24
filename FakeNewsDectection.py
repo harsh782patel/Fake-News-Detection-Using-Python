@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from mlxtend.plotting import plot_confusion_matrix
 
-input_path = '/content/Kaggle/Input/fake-and-real-news-dataset'
+input_path = '/workspaces/Fake-News-Detection-Using-Python/Datasets'
 fake = pd.read_csv(os.path.join(input_path,'Fake.csv'))
 real = pd.read_csv(os.path.join(input_path,'True.csv'))
 
