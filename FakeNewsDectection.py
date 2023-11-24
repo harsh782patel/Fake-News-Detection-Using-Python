@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from mlxtend.plotting import plot_confusion_matrix
 
-input_path = '/workspaces/Fake-News-Detection-Using-Python/Datasets'
+input_path = '/content/Kaggle/Input/fake-and-real-news-dataset'
 fake = pd.read_csv(os.path.join(input_path,'Fake.csv'))
 real = pd.read_csv(os.path.join(input_path,'True.csv'))
 
@@ -203,10 +203,9 @@ for i,body in real.text.items():
 
 real_copy.head()
 
-    # Create new data, and run the algorithm
+# Create new data, and run the algorithm
 data2 = pd.concat([fake, real_copy], axis=0)
 data2 = data2.sample(frac=1).reset_index(drop=True)
 data2.drop('subject', axis=1)
 
 FakeNewsDetection(data2['text'], data2['label'])
-
