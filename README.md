@@ -1,7 +1,6 @@
 # Fake News Detection Using Python
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 This project aims to detect fake news articles using machine learning techniques implemented in Python. It employs a PassiveAggressiveClassifier to classify news articles as either real or fake based on their content.
 
@@ -13,41 +12,39 @@ Fake news has become a significant issue in today's digital age. This project of
 
 The project utilizes two main datasets:
 
-- `Fake.csv`: Contains fake news articles.
-- `True.csv`: Contains real news articles.
+- [`Fake.csv.zip`](Datasets/Fake.csv.zip): Contains fake news articles.
+- [`True.csv.zip`](Datasets/True.csv.zip): Contains real news articles.
 
-These datasets serve as the basis for training and evaluating the fake news detection model.
+These datasets serve as the basis for training and evaluating the fake news detection model. **Please note that you need to unzip these files before using them**.
 
 ## Setup
 
-1. **Clone the repository:**
+1. **Download the provided datasets:**
 
-    ```sh
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-    cd YOUR_REPOSITORY
-    ```
+    - [Download Fake.csv.zip](Datasets/Fake.csv.zip)
+    - [Download True.csv.zip](Datasets/True.csv.zip)
 
-2. **Install the required packages:**
+2. **Extract the contents of the downloaded zip files.**
+
+3. **Install the required packages:**
 
     ```sh
     pip install -r requirements.txt
     ```
 
-3. **Ensure the datasets are placed in the `Datasets` directory.**
-
 ## Running the Project
 
-Execute the main script to run the fake news detection system:
+Run the `fakenewsdetection.py` script to execute the fake news detection system.
 
 ```sh
-python fake_news_detection.py
+python fakenewsdetection.py
 ```
 
 ## Project Structure
 
-- `fake_news_detection.py`: Main script for fake news detection.
+- `fakenewsdetection.py`: Main script for fake news detection.
 - `requirements.txt`: List of required Python packages.
-- `Datasets/`: Directory containing the datasets (`Fake.csv` and `True.csv`).
+- `Datasets/`: Directory containing the datasets (`Fake.csv.zip` and `True.csv.zip`).
 
 ## Visualization
 
@@ -58,6 +55,4 @@ The project includes visualizations for:
 
 These visualizations provide insights into the performance of the fake news detection model and the importance of different features in making predictions.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
