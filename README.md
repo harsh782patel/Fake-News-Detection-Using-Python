@@ -1,25 +1,63 @@
 # Fake News Detection Using Python
 
-This project implements a fake news detection system using machine learning techniques in Python. The system is capable of classifying news articles as real or fake based on their content.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Introduction
+This project aims to detect fake news articles using machine learning techniques implemented in Python. It employs a PassiveAggressiveClassifier to classify news articles as either real or fake based on their content.
 
-The spread of misinformation through fake news articles has become a significant issue in today's digital age. This project aims to address this problem by developing a machine learning model that can accurately detect fake news articles.
+## Overview
+
+Fake news has become a significant issue in today's digital age. This project offers a solution by leveraging machine learning algorithms to automatically identify and flag potentially deceptive news articles. By analyzing textual features and training on a dataset containing both fake and real news articles, the system learns to distinguish between genuine and fabricated information.
 
 ## Dataset
 
-The datasets used in this project are:
+The project utilizes two main datasets:
 
 - `Fake.csv`: Contains fake news articles.
 - `True.csv`: Contains real news articles.
 
-These datasets are available in the `Datasets` directory.
+These datasets serve as the basis for training and evaluating the fake news detection model.
 
 ## Setup
 
-To run the project, follow these steps:
+1. **Clone the repository:**
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   cd YOUR_REPOSITORY
+    ```sh
+    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+    cd YOUR_REPOSITORY
+    ```
+
+2. **Install the required packages:**
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. **Ensure the datasets are placed in the `Datasets` directory.**
+
+## Running the Project
+
+Execute the main script to run the fake news detection system:
+
+```sh
+python fake_news_detection.py
+```
+
+## Project Structure
+
+- `fake_news_detection.py`: Main script for fake news detection.
+- `requirements.txt`: List of required Python packages.
+- `Datasets/`: Directory containing the datasets (`Fake.csv` and `True.csv`).
+
+## Visualization
+
+The project includes visualizations for:
+
+- Confusion matrix
+- Feature weights distribution
+
+These visualizations provide insights into the performance of the fake news detection model and the importance of different features in making predictions.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
