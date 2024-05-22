@@ -12,8 +12,8 @@ Fake news has become a significant issue in today's digital age. This project of
 
 The project utilizes two main datasets:
 
-- [`Fake.csv.zip`](Datasets/Fake.csv.zip): Contains fake news articles.
-- [`True.csv.zip`](Datasets/True.csv.zip): Contains real news articles.
+- [`Fake.csv.zip`]: Contains fake news articles.
+- [`True.csv.zip`]: Contains real news articles.
 
 These datasets serve as the basis for training and evaluating the fake news detection model. **Please note that you need to unzip these files before using them**.
 
@@ -21,8 +21,8 @@ These datasets serve as the basis for training and evaluating the fake news dete
 
 1. **Download the provided datasets:**
 
-    - [Download Fake.csv.zip](Datasets/Fake.csv.zip)
-    - [Download True.csv.zip](Datasets/True.csv.zip)
+    - [Download Fake.csv.zip]
+    - [Download True.csv.zip]
 
 2. **Extract the contents of the downloaded zip files.**
 
